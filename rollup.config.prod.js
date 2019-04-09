@@ -1,7 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
 import json from 'rollup-plugin-json'
-import terser from 'rollup-plugin-terser'
+import { terser } from 'rollup-plugin-terser'
 
 module.exports = [
   // add config for every entry point
