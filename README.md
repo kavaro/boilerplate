@@ -4,13 +4,32 @@
 
 Configures a project to create a nodejs library with rollup and jest
 
-## Installation 
+## Create a new project using "create-project" (recommended)
+
+Step 1: Make sure the create-project package is installed globally
 
 ```bash
-git clone https://github.com/kavaro/boilerplate.git project
-cd project
+yarn global add create-project
+```
+
+Step: Create a new project
+
+```bash
+create-project PROJECT_NAME kavaro/boilerplate
+cd PROJECT_NAME
+git init
+yarn
+# Rename package.json "name" field
+```
+
+## Create a new project manually 
+
+```bash
+git clone https://github.com/kavaro/boilerplate.git PROJECT_NAME
+cd PROJECT_NAME
 git remote rm origin
 yarn
+# Rename package.json "name" field
 ```
 
 ## Usage
